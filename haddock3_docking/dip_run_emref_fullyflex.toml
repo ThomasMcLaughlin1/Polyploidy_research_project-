@@ -1,0 +1,87 @@
+# ====================================================================
+# protein-RNA docking run with AIR restraints - EMREF VERSION
+# ====================================================================
+# GLOBAL PARAMETERS (must be defined before modules)
+# ====================================================================
+# Mandatory parameters
+run_dir = "new_model_dip/dip"
+molecules = [
+    "rna_molecule_8sxu.pdb",
+    "g32580dip_processed_chainAnoHET.pdb"
+]
+# Execution parameters - LOCAL MODE
+mode = "local"
+ncores = 40
+max_cpus = true
+# Optional parameters for better performance
+debug = false
+clean = true
+postprocess = true
+
+# ====================================================================
+# MODULE CONFIGURATIONS
+# ====================================================================
+[topoaa]
+autohis = true
+
+[rigidbody]
+tolerance = 20
+ambig_fname = "./data/AIR_8sxu_dip.tbl"
+sampling = 1000
+epsilon = 78
+dielec = "cdie"
+randremoval = false
+w_desolv = 0
+
+[caprieval]
+reference_fname = "./data/8sxu.pdb"
+
+[clustfcc]
+min_population = 4
+
+[seletopclusts]
+top_models = 20
+
+[caprieval]
+reference_fname = "./data/8sxu.pdb"
+
+[flexref]
+# Define chain ID of 1st fully flexible segment
+fle_seg_1 = "C"
+# Define the first residue for the 1st fully flexible segment 
+fle_sta_1 = 2
+# Define the last residue for the 1st fully flexible segment 
+fle_end_1 = 11
+tolerance = 50
+ambig_fname = "./data/AIR_8sxu_dip.tbl"
+epsilon = 78
+dielec = "cdie"
+randremoval = false
+dnarest_on = true
+w_desolv = 0
+
+[caprieval]
+reference_fname = "./data/8sxu.pdb"
+
+[emref]
+tolerance = 20
+ambig_fname = "./data/AIR_8sxu_dip.tbl"
+randremoval = false
+dnarest_on = true
+w_desolv = 0
+
+[caprieval]
+reference_fname = "./data/8sxu.pdb"
+
+[clustfcc]
+
+[seletopclusts]
+top_models = 4
+
+[caprieval]
+reference_fname = "./data/8sxu.pdb"
+
+# Final evaluation with all atoms
+[caprieval]
+allatoms = true
+reference_fname = "./data/8sxu.pdb"

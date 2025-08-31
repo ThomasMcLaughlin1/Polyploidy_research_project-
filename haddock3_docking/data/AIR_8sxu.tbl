@@ -1,0 +1,12 @@
+! AIRs for 8sxu RNA-protein docking
+! Active residues: protein chain A
+! Passive residues: RNA chain C
+assign (segid A and resi 371) (segid C) 2.0 2.0 0.0
+assign (segid A and resi 450) (segid C) 2.0 2.0 0.0
+assign (segid A and resi 451) (segid C) 2.0 2.0 0.0
+assign (segid A and resi 641) (segid C) 2.0 2.0 0.0
+assign (segid A and resi 642) (segid C) 2.0 2.0 0.0
+assign (segid A and resi 643) (segid C) 2.0 2.0 0.0
+assign (segid A and resi 799) (segid C) 2.0 2.0 0.0
+assign (segid A and resi 800) (segid C) 2.0 2.0 0.0
+assign (segid A and resi 804) (segid C) 2.0 2.0 0.0
