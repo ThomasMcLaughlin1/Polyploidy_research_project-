@@ -1,0 +1,6 @@
+allel
+numpy
+seqIQ
+seq
+seqrecord
+cmd
