@@ -1,0 +1,19 @@
+nthread = 0
+nthreadpair = 0
+nthreadtb = 0
+ppenalty_ex = 0
+stacksize: -1 kb
+rescale = 1
+Gap Penalty = -1.53, +0.00, +0.00
+========================================================================= 
+========================================================================= 
+=== 
+=== Alphabet 'O' is unknown.
+=== Please check site 2056 in sequence 2.
+=== 
+=== To make an alignment that has unusual characters (U, @, #, etc), try  
+=== % mafft --anysymbol input > output
+=== 
+========================================================================= 
+========================================================================= 
+Illegal character O
