@@ -1,3 +1,5 @@
+## This is lab code 
+
 # common routines for alphafold job
 
 mkdir -p $SCRATCHDIR/tmp  # tmp directory, some jobs need >1GB
