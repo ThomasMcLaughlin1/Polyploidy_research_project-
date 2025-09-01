@@ -1,3 +1,6 @@
+## This is Lab code
+
+
 #PBS -N Alphafold-OOD-JOB
 #PBS -q default
 #PBS -l select=1:ncpus=8:ngpus=1:mem=300gb:scratch_local=30gb:gpu_cap=compute_75
